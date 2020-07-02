@@ -1,0 +1,130 @@
+body{
+	 background-color: #f8f8f8;
+}
+
+.navbar {
+  min-height: 70px;
+}
+
+.navbar-default .navbar-brand{
+    color:  rgba(19, 200, 255, 1);
+	font-size: 2em;
+	text-align: center;
+	margin-top: 0px;
+}
+
+.logo{
+	height:40px;
+	width:60px;
+}
+
+.navbar-default .navbar-nav li a{
+	
+	margin-top: 8px;
+}
+
+#navcss{
+	margin-top: 18px;
+}
+
+ .jumbotron{
+    opacity: 1;
+    color: #fff;
+    background: url("https://images.unsplash.com/photo-1505735754789-3404132203ed?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80") bottom center no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    position:relative;
+    z-index:1;
+	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+}
+
+@media only screen and (min-width: 1200px) {
+    /* styles for wide screens */
+.responsive {
+  	width: 100%;
+ 	height: 600px;
+}
+}
+
+@media only screen and (max-width: 720px) {
+    /* styles for narrow screens */
+.responsive {
+	width: 100%;
+ 	height: 350px;
+}
+}
+
+@media only screen and (max-width: 720px) {
+    /* styles for narrow screens */
+.form-control{
+		width:auto;
+		margin-left: -50%;
+	}
+}
+@media only screen and (max-width: 720px) {
+.btn-control{
+		width:auto;
+		margin-left: -50%;
+	}
+}
+
+/* Covid Table */
+.covid{
+	margin-top:-0.025%;
+}
+.color-head{color:rgba(19, 200, 255, 1);}
+.table-responsive{
+	margin-top: 2%;
+}
+th {text-align:center;}
+.color-red{color:red;}
+.color-blue{color:blue;}
+.color-green{color:green;}
+.color-grey{color:grey;}
+
+.text{
+	color:white;
+	margin-top: 1%;
+	margin-bottom:3%;
+	position:relative;
+}
+
+.overlay{
+	margin-top: 10%;
+	overflow: hidden;
+    background: rgba(21, 228, 247, .2);	
+}
+
+.thumbnail img {
+    width: 100%;
+}
+
+.thumbnail {
+    padding: 0;
+}
+
+.thumbnail .caption-full {
+    padding: 9px;
+}
+
+#deleteForm{
+	display: inline;
+}
+
+.footer{
+	text-align: center;
+	position: relative;
+}
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (min--moz-device-pixel-ratio: 2),
+only screen and (-moz-min-device-pixel-ratio: 2),
+only screen and (-o-min-device-pixel-ratio: 2/1),
+only screen and (min-device-pixel-ratio: 2),
+only screen and (min-resolution: 192dpi),
+only screen and (min-resolution: 2dppx) { 
+    /* styles for Retina-type displays */
+}

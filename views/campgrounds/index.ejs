@@ -1,0 +1,57 @@
+<%- include("../partials/header")%>
+
+<div class="container">
+	<h3 class="text-left covid">Covid19 <span class="color-head">INDIA</span> :</h3>
+	<div class="table-responsive">
+		<table class="table text-center">
+			<thead>
+				<tr>
+        			<th class="color-red">Total Cases</th>
+					<th class="color-blue">Active</th>
+					<th class="color-green">Recovered</th>
+					<th class="color-grey">Deceased</th>
+      			</tr>
+    		</thead>
+			<tbody>
+				<tr>
+					<td class="color-red"><%= parsedData["data"]["summary"].total %></td>
+					<td class="color-blue"><%= parsedData["data"]["summary"].total -  parsedData["data"]["summary"].discharged - parsedData["data"]["summary"].deaths %>						</td>
+					<td class="color-green"><%= parsedData["data"]["summary"].discharged %></td>
+					<td class="color-grey"><%= parsedData["data"]["summary"].deaths %></td>
+      			</tr>
+			</tbody>
+ 		</table>
+	</div>	
+</div>
+
+<header class="jumbotron responsive">
+	<div class="overlay">
+		<div class="container">
+			<div class="text text-center">
+			<h1>Welcome to BlissCamp!</h1>
+			<p>View our handpicked camps from all over the world </p>
+			<a class="btn btn-md btn-primary" href="/campgrounds/new">Add new Campground</a> 
+			</div>
+		</div>
+	</div>
+</header>
+
+<div class="container">
+	<div class="row text-center" style="display:flex; flex-wrap:wrap;">
+		<% campgrounds.forEach(function(camps){ %>
+			<div class="col-md-4 col-sm-6">
+				<div class="thumbnail">
+					<img src= "<%= camps.image %>">
+					<div class="caption">
+						<h4><%= camps.name %></h4>
+					</div>
+					<p>
+						<a href="/campgrounds/<%= camps._id %>" class="btn btn-primary">More Info</a>
+					</p>
+				</div>
+			</div>
+		<% }); %>
+	</div>
+</div>
+
+<%- include("../partials/footer") %>
